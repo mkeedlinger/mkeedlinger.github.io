@@ -1,0 +1,25 @@
+---
+---
+.jumbotron {
+    h1 {
+        margin-bottom: 0px;
+        font-weight: bold;
+    }
+    ul {
+        padding-left: 0px;
+    }
+    li {
+        list-style-type: none;
+        display: inline;
+        padding-right: 5px;
+        font-style: italic;
+        padding-left: 5px;
+    }
+}
+.thumbnail {
+    padding-left: 5px;
+    padding-right: 5px;
+    h3 {
+        text-align: center;
+    }
+}

@@ -1,5 +1,6 @@
 $(function () {
     markdown();
+    copy();
 });
 
 function markdown () {
@@ -31,4 +32,14 @@ function limitSpacing (text) {
         return currentLine.slice(count);
     });
     return text.join('\n');
+}
+
+function copy () {
+    $('.copy').each(function (idx, ele) {
+        ele = $(ele);
+        var copy = ele.data('copy');
+        ele.click(function () {
+            prompt("Copy the text, then press enter:\n\n" + copy + '\n', copy);
+        });
+    });
 }
