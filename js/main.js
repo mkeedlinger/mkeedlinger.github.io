@@ -1,6 +1,7 @@
 $(function () {
     markdown();
     copy();
+    spacing();
     hljs.initHighlightingOnLoad();
 });
 
@@ -22,6 +23,14 @@ function markdown () {
                 ele.removeAttr('id');
             });
         }
+    });
+}
+
+function spacing () {
+    $('.limitSpacing').each(function (ind, ele) {
+        ele = $(ele);
+        console.log(99,limitSpacing(ele.html()))
+        ele.html(limitSpacing(ele.html()));
     });
 }
 

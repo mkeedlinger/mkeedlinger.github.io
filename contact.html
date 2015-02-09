@@ -139,13 +139,12 @@ more_includes:
     <h4>Signiture</h4>
     <p>To verify my contact info just run</p>
     <pre>
-      <code class="text-left">
-        curl http://mke8.me/sig/contact_info.txt.gpg \
-        | gpg --yes --output /dev/stdout -v - \
-        | less
+      <code class="text-left limitSpacing">
+        curl -s http://mke8.me/sig/contact_info.txt.gpg \
+        | gpg --yes --output /dev/stdout -v -
       </code>
     </pre>
-    <a href="http://mke8.me/sig/contact_info.txt.gpg" class="button">Download GPG Signature</a>
+    <a href="/sig/contact_info.txt.gpg" class="button">Download GPG Signature</a>
   </div>
 </div>
 <br>
