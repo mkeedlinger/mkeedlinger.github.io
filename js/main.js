@@ -1,6 +1,7 @@
 $(function () {
     markdown();
     copy();
+    hljs.initHighlightingOnLoad();
 });
 
 function markdown () {

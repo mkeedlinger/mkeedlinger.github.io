@@ -13,5 +13,21 @@
 }
 .block {
     // width: 300px !important;
-    height: 250px !important;
+    height: 275px !important;
+    position: relative;
+    .row {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+    p {
+        margin-bottom: 10px;
+    }
+}
+.code {
+    background-color: #111;
+    color: #eee;
+    padding: 10px 20px;
+    border-radius: 5px;
+    // display: block;
 }
