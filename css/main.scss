@@ -19,5 +19,19 @@
 }
 
 #content {
-  min-height: calc(100% - 125px);
+  min-height: calc(100% - 140px);
+}
+
+header {
+  margin-bottom: 1em;
+}
+
+#contactCards {
+  p {
+    text-align: center;
+  }
+}
+
+.full-width {
+  width: 100%;
 }
