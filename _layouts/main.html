@@ -1,0 +1,25 @@
+<DOCTYPE html>
+<head>
+  <title>{{page.title}} | mkeedlinger's site</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mini.css/2.2.0/mini-dark.min.css" integrity="sha384-nJ8zEh01wuMd/mdGV004OjN4VOwIWVvFjeV3u6rQobmN8HS2i0Emu+x+9qdCQfFK" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{{"/css/main.css" | relative_url}}">
+  {% feed_meta %} <!-- for feed readers -->
+  {% seo %}
+</head>
+<body>
+  <header>
+    <a href="/" class="logo">MKE</a>
+    <a href="#" class="button">Contact</a>
+    <a href="/blog.html" class="button">Blog</a>
+  </header>
+  <div class="container" id="content">
+    {{content}}
+  </div>
+  <footer>
+    <span>&copy; <span id="crYear">2018</span> Michael Edlinger</span>
+    <script>
+      document.getElementById('crYear').textContent = new Date().getFullYear();
+    </script>
+  </footer>
+</body>

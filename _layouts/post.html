@@ -1,0 +1,22 @@
+---
+layout: main
+---
+<div class="row">
+  <div class="col-sm-12 col-md-9 col-lg-9">
+    <h1>{{page.title}}</h1>
+    <hr>
+    <br>
+    <i><b>TL;DR </b>{{page.tldr}}</i>
+    <br>
+    {{content}}
+  </div>
+  <div class="col-sm-12 col-md-3 col-lg-3" id="postInfo">
+    <hr class="hidden-md hidden-lg">
+    <div>
+      <b>Post Info</b>
+      <br>
+      <p>Date: {{ page.date | date_to_string }}</p>
+      <p>Tags: {{page.tags | join: ', '}}</p>
+    </div>
+  </div>
+</div>

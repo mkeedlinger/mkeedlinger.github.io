@@ -1,0 +1,39 @@
+---
+layout: main
+title: Blog
+---
+<div class="row">
+  <div class="col-sm-12 text-center">
+    <h1>Blog</h1>
+    <p>My ramblings about whatever.</p>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-12 col-md-11 col-md-offset-1 col-lg-10 col-lg-offset-2">
+    {% for post in site.posts %}
+      <div class="row">
+        <div class="col-sm-12 col-md-12">
+          <div>
+            {{ post.date | date_to_string }} &raquo; <a href="{{ post.url }}">{{ post.title }}</a><br class="hidden-md hidden-lg"> - <i>TL;DR {{ post.tldr | strip_html | strip_newlines | truncatewords: 10 }}</i>
+          </div>
+        </div>
+        <div class="col-sm-10 col-sm-offset-2">
+          <span>{{ post.content | strip_html | strip_newlines | truncatewords: 15 }}</span>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+<!-- this would be for pagination, if I wanted to support that right now https://jekyllrb.com/docs/pagination/
+<div class="row text-center">
+  <div class="col-sm-2 col-sm-offset-3">
+    before
+  </div>
+  <div class="col-sm-2">
+    {{paginator.page}}
+  </div>
+  <div class="col-sm-2">
+    after
+  </div>
+</div>
+-->

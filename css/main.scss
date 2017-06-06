@@ -1,0 +1,23 @@
+---
+---
+.text-center {
+  text-align: center;
+}
+
+#infoHead {
+  ul {
+    columns: 2;
+    list-style-type: none;
+  }
+}
+
+#postInfo {
+  padding-top: 1.75em;
+  div {
+    padding-left: 1.75em;
+  }
+}
+
+#content {
+  min-height: calc(100% - 125px);
+}
