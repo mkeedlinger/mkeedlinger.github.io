@@ -4,9 +4,6 @@ paginate_path: "/blog/page-:num/"
 paginate: 20
 gems:
 - jekyll-paginate
-- jekyll-feed
-- jekyll-seo-tag
-- jekyll-sitemap
 defaults:
   values:
     layout: post

@@ -4,6 +4,33 @@
   text-align: center;
 }
 
+.less {
+  color: #999;
+}
+
+.undo {
+  text-transform: none !important;
+}
+
+h2, h3 {
+  margin-top: 1.25em;
+}
+h4 {
+  margin-top: 1.1em;
+}
+
+.kinda {
+  color: #555;
+}
+
+.more {
+  color: #000;
+}
+
+.right {
+  float: right;
+}
+
 #infoHead {
   ul {
     columns: 2;
@@ -19,7 +46,17 @@
 }
 
 #content {
-  min-height: calc(100% - 140px);
+  min-height: calc(100vh - 140px);
+}
+
+.double {
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+}
+
+footer {
+  margin-top: 3rem;
 }
 
 header {
